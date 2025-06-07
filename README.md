@@ -1,21 +1,24 @@
 # API Response Formatter - Chrome Extension
 
-A powerful Chrome extension for formatting and beautifying JSON, XML, and YAML data with syntax highlighting, validation, and advanced developer tools.
+A smart Chrome extension that automatically formats JSON with beautiful syntax highlighting, instant search, and seamless toggle between formatted and raw views.
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Version](https://img.shields.io/badge/version-1.1.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Chrome Web Store](https://img.shields.io/badge/Chrome-Extension-yellow)
 
 ## ✨ Features
 
-- 🎨 **Instant JSON Formatting** - Beautiful syntax highlighting with CodeMirror
-- ✅ **Smart Validation** - Real-time error detection and helpful error messages
+- 🚀 **Auto-Format by Default** - JSON pages are automatically formatted when you visit them
+- 🔄 **Instant Toggle** - Switch between formatted and raw JSON with one click
+- 🔍 **Smart Search** - Find any key or value instantly with real-time highlighting
+- 🌈 **Depth-Based Coloring** - Each nesting level has its own color for easy visualization
+- 🌙 **Professional Dark Theme** - High-contrast syntax highlighting on dark background
 - 🖱️ **Multiple Access Methods**:
-  - Extension popup interface
+  - Auto-format on page load (default)
   - Right-click context menu
-  - Keyboard shortcut (Ctrl+Shift+F / Cmd+Shift+F)
+  - Extension popup interface
+  - Keyboard shortcuts (Ctrl+Shift+F / Cmd+Shift+F)
 - 📋 **One-Click Copy** - Copy formatted output to clipboard instantly
-- 🌙 **Dark Theme** - Easy on the eyes with One Dark theme
 - 🔒 **Privacy First** - All processing done locally, no data sent anywhere
 
 ## 🚀 Installation

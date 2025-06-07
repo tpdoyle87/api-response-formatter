@@ -59,5 +59,8 @@
 
 ## Files Ready for Upload
 - ✅ `api-response-formatter.zip` - Extension package
-- ✅ `PRIVACY_POLICY.md` - Privacy policy (host this on GitHub)
+- ✅ `PRIVACY_POLICY.md` - Privacy policy (hosted at: https://tpdoyle87.github.io/api-response-formatter/)
 - ✅ `STORE_LISTING.md` - Store listing content
+
+## Privacy Policy URL
+https://tpdoyle87.github.io/api-response-formatter/

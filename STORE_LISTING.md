@@ -4,24 +4,39 @@
 API Response Formatter
 
 ## Short Description (132 characters max)
-Format and beautify JSON, XML, YAML with syntax highlighting. Features tree view, validation, and one-click formatting.
+Auto-format JSON with dark theme, depth coloring, and instant search. Toggle raw/formatted views with one click.
 
 ## Detailed Description
 
-### Format JSON with One Click! 
+### The Smart JSON Formatter That Actually Gets It! 
 
-API Response Formatter is the ultimate tool for developers working with API responses and data formats. Transform messy, minified JSON into beautiful, readable code instantly.
+API Response Formatter automatically detects and beautifies JSON content the moment you load a page. No more copying and pasting - just visit any API endpoint and see perfectly formatted JSON instantly.
+
+### 🚀 What Makes Us Different:
+• **Auto-Format by Default** - JSON pages are automatically formatted when you visit them
+• **Instant Toggle** - Switch between formatted and raw JSON with one click
+• **Smart Search** - Find any key or value instantly with highlighted results
+• **Depth-Based Coloring** - Each nesting level has its own color for easy visualization
+• **Dark Theme** - Professional dark background with high-contrast syntax highlighting
 
 ### ✨ Key Features:
-• **Instant Formatting** - Format JSON with syntax highlighting and proper indentation
-• **Smart Validation** - Instantly identify and fix JSON syntax errors  
+• **Automatic Detection** - Instantly formats JSON content on page load
+• **Powerful Search**:
+  - Real-time search highlighting
+  - Navigate matches with arrow keys
+  - Shows match count (e.g., "3 / 15")
+  - Keyboard shortcuts (Ctrl/Cmd+F)
+• **Beautiful Syntax Highlighting**:
+  - Depth-based rainbow coloring
+  - High contrast dark theme
+  - Different colors for keys, strings, numbers, booleans
+• **One-Click Toggle** - Switch between formatted and raw views instantly
 • **Multiple Access Methods**:
-  - Click the extension icon
+  - Auto-format on page load (default)
   - Right-click any selected text → "Format JSON"
+  - Extension popup for manual formatting
   - Keyboard shortcut: Ctrl+Shift+F (Cmd+Shift+F on Mac)
-• **Tree View** - Collapsible nested objects for easy navigation
 • **Copy to Clipboard** - One-click copying of formatted output
-• **Dark Theme** - Easy on the eyes with CodeMirror's One Dark theme
 • **Zero Setup** - Works instantly after installation
 
 ### 🔒 Privacy First

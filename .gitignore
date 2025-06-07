@@ -49,3 +49,7 @@ Desktop.ini
 tmp/
 temp/
 .cache/
+
+# Documentation files (except README)
+*.md
+!README.md

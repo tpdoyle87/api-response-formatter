@@ -8,6 +8,38 @@ function App() {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
   const [error, setError] = useState('');
+  const [autoFormat, setAutoFormat] = useState(true);
+
+  // Load saved settings
+  React.useEffect(() => {
+    chrome.storage.local.get(['autoFormat'], (result) => {
+      if (result.autoFormat !== undefined) {
+        setAutoFormat(result.autoFormat);
+      } else {
+        // Set default to true for new users
+        chrome.storage.local.set({ autoFormat: true });
+      }
+    });
+  }, []);
+
+  // Handle auto-format toggle
+  const handleAutoFormatToggle = (e) => {
+    const newValue = e.target.checked;
+    setAutoFormat(newValue);
+    
+    // Save setting
+    chrome.storage.local.set({ autoFormat: newValue });
+    
+    // Notify content script
+    chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+      if (tabs[0]) {
+        chrome.tabs.sendMessage(tabs[0].id, {
+          action: 'toggleAutoFormat',
+          enabled: newValue
+        });
+      }
+    });
+  };
 
   const formatJSON = () => {
     try {
@@ -33,6 +65,26 @@ function App() {
   return (
     <div style={{ padding: '10px', height: '100%', display: 'flex', flexDirection: 'column' }}>
       <h2 style={{ fontSize: '16px', marginBottom: '10px' }}>API Response Formatter</h2>
+      
+      <div style={{ 
+        display: 'flex', 
+        alignItems: 'center', 
+        marginBottom: '10px',
+        padding: '10px',
+        backgroundColor: '#f0f0f0',
+        borderRadius: '5px'
+      }}>
+        <input
+          type="checkbox"
+          id="autoFormat"
+          checked={autoFormat}
+          onChange={handleAutoFormatToggle}
+          style={{ marginRight: '8px' }}
+        />
+        <label htmlFor="autoFormat" style={{ fontSize: '14px', cursor: 'pointer' }}>
+          Auto-format JSON on page load
+        </label>
+      </div>
       
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '10px' }}>
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
